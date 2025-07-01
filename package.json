@@ -1,0 +1,17 @@
+{
+  "name": "nodeserverinnosqltest",
+  "version": "1.0.0",
+  "description": "Este repositório é para aprender a criar um servidor node com o No SQL através do mongo DB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "mongodb": "6.17",
+    "mongoose": "^8.16.1"
+  }
+}
