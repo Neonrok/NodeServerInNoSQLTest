@@ -4,7 +4,9 @@
   "description": "Este repositório é para aprender a criar um servidor node com o No SQL através do mongo DB",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "restart": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,7 @@
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "mongodb": "6.17",
-    "mongoose": "^8.16.1"
+    "mongoose": "^8.16.1",
+    "nodemon": "^3.1.10"
   }
 }

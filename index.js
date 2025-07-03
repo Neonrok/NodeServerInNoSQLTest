@@ -4,12 +4,24 @@ const express = require('express');
 
 require('dotenv').config();
 const uri = process.env.URI;
-const client = new MongoClient(uri);
+//const client = new MongoClient(uri);
 
 const app = express();
 const port = process.env.PORT;
 const host = process.env.HOST;
 
+let test = async function TestConect() {
+    let client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+    try {
+        await client.connect();
+        console.log('Succesfully Connected to MongoDB Atlas :)');
+        console.log(client)
+    }catch{
+        console.log('Unsuccesfully Connected to MongoDB Atlas :(');
+    }
+}
+test()
+/*
 app.use(express.json());
 
 app.use((req, res, next) => {
@@ -60,3 +72,5 @@ app.use((err, req, res, next) => {
 app.listen(port, host, () => {
     console.log(`App listening at http://${host}:${port}/`);
 });
+
+*/
